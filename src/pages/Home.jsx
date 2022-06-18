@@ -1,12 +1,17 @@
-
-
-
-import React from 'react'
+import React from "react";
+import Helmet from "../components/Helmet/Helmet.js";
+import { Container, Row, Col } from "react-dom";
 
 const Home = () => {
-  return (
-    <div>Home</div>
-  )
-}
+  return <Helmet title="Home">
+    <section>
+      <Container>
+        <Row>
+          <Col lg='6' md='6'></Col>
+        </Row>
+      </Container>
+    </section>
+  </Helmet>;
+};
 
-export default Home
+export default Home;
